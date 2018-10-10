@@ -67,7 +67,8 @@ If we focus exclusively on "REBILL", they do in fact generate more revenue in th
    - Control group --> Average of 25.9
    - Test group --> Average of 31.5
 
-<img src="/q3.1.png" height="125" width="180">
+<img src="/q3.1.png" height="110" width="160">
+
 ```
 inner_merged %>%
   group_by(test_group, transaction_type) %>%
@@ -79,6 +80,7 @@ If we take into considering all of the factors, users that call still generate m
    - Test group --> Average of 28.2 
    
 <img src="/q3.2.png" height="80" width="100">
+
 ```
 inner_merged %>%
   group_by(test_group) %>%
