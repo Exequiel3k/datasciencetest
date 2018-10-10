@@ -40,7 +40,7 @@ The frequency table clearly indicates users that CALL instead of doing it on the
    - Control group --> 92.7%  
    - Test group --> 94.8%
    
- <img src="/q1.1.png" height="175" width="220">
+ <img src="/q1.1.png" height="160" width="220">
 
 ```
 inner_merged %>%
@@ -90,3 +90,4 @@ inner_merged %>%
   mutate(charRate = n / sum(n)) %>%
   summarise(charRate = charRate[1]/charRate[2])
 ```
+ <img src="/q4.1.png" height="80" width="120">
