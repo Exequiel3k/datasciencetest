@@ -62,7 +62,7 @@ We would reject the null hypothesis and conclude that there is statistical diffe
 ``` 
  
 ### Is a user that must call-in to cancel more likely to generate more revenues? 
-If we focus exclusively on "REBILL", they do in fact generate more revenue in the long-run.   
+If we focus exclusively on "REBILL", they do in fact generate more revenue in average on the long-run.   
    - Control group --> Average of 25.9
    - Test group --> Average of 31.5
 
@@ -74,7 +74,7 @@ inner_merged %>%
   summarise(avg = mean(transaction_amount)) 
 ```
 
-If we take into considering all of the factors, users that call still generate more revenue in the long-run.
+If we take into considering all of the factors, users that call still generate more revenue in average on the long-run.
    - Control group --> Average of 22.2  
    - Test group --> Average of 28.2 
    
