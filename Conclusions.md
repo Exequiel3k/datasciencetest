@@ -58,7 +58,7 @@ HO:Control = Test & H1:Control =\ Test
 
 chisq.test(inner_merged$test_group, inner_merged$transaction_type) 
 
-We would reject the null hypothesis and conclude that here is statistical difference between them. Furthur analysis could be done such as interval confidence. 
+We would reject the null hypothesis and conclude that there is statistical difference between them. Furthur analysis could be done such as interval confidence. 
 ``` 
  
 ### Is a user that must call-in to cancel more likely to generate more revenues? 
