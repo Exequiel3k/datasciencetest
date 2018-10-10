@@ -1,4 +1,4 @@
- Data Science Application results 
+# Data Science Application results 
 
 ```
 library(tidyverse)
@@ -15,7 +15,7 @@ summary(inner_merged)
 ```
 
 ### What is the aproximate probability distribution between the test group and the control group?
-The relative frequency distribution for each group is:
+The relative frequency distribution for each is:
 
    - Control group --> 75.2% (44,886 users) 
    - Test group --> 24.8% (14,835 users)
@@ -41,7 +41,6 @@ The frequency table clearly indicates users that call instead of doing it on the
    - Test group --> 94.8%
    
  <img src="/q1.1.png" height="145" width="220">
-
 ```
 inner_merged %>%
   group_by(test_group, transaction_type) %>%
@@ -68,7 +67,6 @@ If we focus exclusively on "REBILL", they do in fact generate more revenue in th
    - Test group --> Average of 31.5
 
 <img src="/q3.1.png" height="110" width="160">
-
 ```
 inner_merged %>%
   group_by(test_group, transaction_type) %>%
@@ -80,7 +78,6 @@ If we take into considering all of the factors, users that call still generate m
    - Test group --> Average of 28.2 
    
 <img src="/q3.2.png" height="80" width="100">
-
 ```
 inner_merged %>%
   group_by(test_group) %>%
