@@ -87,7 +87,7 @@ inner_merged %>%
 ```
 
 ### Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
-Indeed, web-form users have higher chargeback rates.
+Based on the findings, web-form users have higher chargeback rates.
 
    - Control group --> 2.82%
    - Test group --> 1.78%
