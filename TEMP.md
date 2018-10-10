@@ -67,6 +67,7 @@ If we focus exclusively on "REBILL", they do in fact generate more revenue in th
    - Test group --> Average of 31.5
 
 <img src="/q3.1.png" height="110" width="160">
+
 ```
 inner_merged %>%
   group_by(test_group, transaction_type) %>%
@@ -78,6 +79,7 @@ If we take into considering all of the factors, users that call still generate m
    - Test group --> Average of 28.2 
    
 <img src="/q3.2.png" height="80" width="100">
+
 ```
 inner_merged %>%
   group_by(test_group) %>%
@@ -89,6 +91,7 @@ It is more likely for a web-form user to have a higher chargeback rate.
 
    - Control group --> 0.0282
    - Test group --> 0.0178
+<img src="/q4.1.png" height="70" width="120">
 
 ```
 inner_merged %>%
@@ -98,4 +101,4 @@ inner_merged %>%
   mutate(charRate = n / sum(n)) %>%
   summarise(charRate = charRate[1]/charRate[2])
 ```
- <img src="/q4.1.png" height="70" width="120">
+
