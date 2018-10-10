@@ -70,6 +70,8 @@ inner_merged %>%
   summarise(avg = mean(transaction_amount)) 
 ```
  <img src="/q3.1.png" height="125" width="180">
+
+
 TRUE; 28.2 vs 22.2
 ```
 inner_merged %>%
@@ -77,6 +79,7 @@ inner_merged %>%
   summarise(Tot_avg = mean(transaction_amount)) 
 ```
  <img src="/q3.2.png" height="80" width="100">
+
 ### Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
 FALSE: 0.0282 vs 0.0178 
 ```
