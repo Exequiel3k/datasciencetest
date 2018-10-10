@@ -16,8 +16,9 @@ summary(inner_merged)
 
 #### What is the aproximate probability distribution between the test group and the control group?
 The relative frequency distribution for each group is:
-   *Control group --> 75.2% (44,886 users) 
-   *Test group -->which is 24.8% (14,835 users)
+
+   - Control group --> 75.2% (44,886 users) 
+   - Test group --> 24.8% (14,835 users)
  
 ```
 testSamples %>%
