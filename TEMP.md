@@ -41,15 +41,15 @@ The frequency table clearly indicates users that call instead of doing it on the
    - Test group --> 94.8%
    
  <img src="/q1.1.png" height="145" width="220">
+
 ```
 inner_merged %>%
   group_by(test_group, transaction_type) %>%
   summarise (n = n()) %>%
   mutate(freq = n / sum(n))
-```  
-
-
+```
 :warning:OPTIONAL:warning:
+
 ```
 We can also check if the proportion between both groups differs via the Chi-squared test of independence: 
 
