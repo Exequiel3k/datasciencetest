@@ -55,7 +55,7 @@ inner_merged %>%
 We can also check if the proportion between both groups differs via the Chi-squared test of independence: 
 
 HO:Control = Test & H1:Control =\ Test
-  P-Value < 5%, which indicates we can we can rejet H0 at a significance level of 5%. 
+  P-Value < 5%, which indicates we can we can rejet H0 at a significance level of 95%. 
 
 chisq.test(inner_merged$test_group, inner_merged$transaction_type) 
 
@@ -69,13 +69,14 @@ inner_merged %>%
   group_by(test_group, transaction_type) %>%
   summarise(avg = mean(transaction_amount)) 
 ```
-
+ <img src="/q3.1.png" height="125" width="180">
 TRUE; 28.2 vs 22.2
 ```
 inner_merged %>%
   group_by(test_group) %>%
   summarise(Tot_avg = mean(transaction_amount)) 
 ```
+ <img src="/q3.2.png" height="80" width="100">
 ### Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
 FALSE: 0.0282 vs 0.0178 
 ```
