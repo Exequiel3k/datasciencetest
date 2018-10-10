@@ -35,7 +35,7 @@ ggplot(testSamples, aes(x=test_group)) +
 ```
 
 ### Is a user that must call-in to cancel more likely to generate at least 1 addition REBILL? 
-The frequency table clearly indicates users that call instead of doing it on the web-form have a higher percentage "REBILL" level. 
+The proportions table clearly indicates users that call instead of doing it on the web-form have a higher percentage "REBILL" level. 
 
    - Control group --> 92.7%  
    - Test group --> 94.8%
@@ -87,7 +87,7 @@ inner_merged %>%
 ```
 
 ### Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
-It is more likely for a web-form user to have a higher chargeback rate.
+Indeed, web-form users have higher chargeback rates.
 
    - Control group --> 0.0282
    - Test group --> 0.0178
