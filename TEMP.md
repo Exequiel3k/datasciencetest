@@ -48,11 +48,11 @@ inner_merged %>%
   summarise (n = n()) %>%
   mutate(freq = n / sum(n))
 ```
-:warning:OPTIONAL:warning:
 
 ```
-We can also check if the proportion between both groups differs via the Chi-squared test of independence: 
+:warning:OPTIONAL:warning:
 
+We can also check if the proportion between both groups differs via the Chi-squared test of independence: 
 HO:Control = Test & H1:Control =\ Test
   P-Value < 5%, which indicates we can we can rejet H0 at a significance level of 95%. 
 
