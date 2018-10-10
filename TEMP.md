@@ -40,7 +40,7 @@ The frequency table clearly indicates users that CALL instead of doing it on the
    - Control group --> 92.7%  
    - Test group --> 94.8%
    
- <img src="/q1.1.png" height="160" width="220">
+ <img src="/q1.1.png" height="145" width="220">
 
 ```
 inner_merged %>%
@@ -63,31 +63,34 @@ We would reject the null hypothesis and conclude that here is statistical differ
 ``` 
  
 ### Is a user that must call-in to cancel more likely to generate more revenues? 
-If we focus exclusively on users that call, they do in fact generate more revenue in the long-run.   
-
+If we focus exclusively on "REBILL", they do in fact generate more revenue in the long-run.   
    - Control group --> Average of 25.9
    - Test group --> Average of 31.5
+
+<img src="/q3.1.png" height="125" width="180">
 ```
 inner_merged %>%
   group_by(test_group, transaction_type) %>%
   summarise(avg = mean(transaction_amount)) 
 ```
- <img src="/q3.1.png" height="125" width="180">
 
-
-If we take into considering all of the other factors, users that call still generate more revenue in the long-run.
-
+If we take into considering all of the factors, users that call still generate more revenue in the long-run.
    - Control group --> Average of 22.2  
    - Test group --> Average of 28.2 
+   
+<img src="/q3.2.png" height="80" width="100">
 ```
 inner_merged %>%
   group_by(test_group) %>%
   summarise(Tot_avg = mean(transaction_amount)) 
 ```
- <img src="/q3.2.png" height="80" width="100">
 
 ### Is a user that must call-in more likely to produce a higher chargeback rate(CHARGEBACKs/REBILLs)?
-FALSE: 0.0282 vs 0.0178 
+FALSE
+
+   - Control group --> 0.0282
+   - Test group --> 0.0178
+
 ```
 inner_merged %>%
   group_by(test_group, transaction_type) %>%
