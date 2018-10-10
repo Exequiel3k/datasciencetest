@@ -63,7 +63,10 @@ We would reject the null hypothesis and conclude that here is statistical differ
 ``` 
  
 ### Is a user that must call-in to cancel more likely to generate more revenues? 
-TRUE; 31.5 vs 25.9 
+If we focus exclusively on users that call, they do in fact generate more revenue in the long-run.   
+
+   - Control group --> Average of 25.9
+   - Test group --> Average of 31.5
 ```
 inner_merged %>%
   group_by(test_group, transaction_type) %>%
@@ -72,7 +75,10 @@ inner_merged %>%
  <img src="/q3.1.png" height="125" width="180">
 
 
-TRUE; 28.2 vs 22.2
+If we take into considering all of the other factors, users that call still generate more revenue in the long-run.
+
+   - Control group --> Average of 22.2  
+   - Test group --> Average of 28.2 
 ```
 inner_merged %>%
   group_by(test_group) %>%
@@ -90,4 +96,4 @@ inner_merged %>%
   mutate(charRate = n / sum(n)) %>%
   summarise(charRate = charRate[1]/charRate[2])
 ```
- <img src="/q4.1.png" height="80" width="120">
+ <img src="/q4.1.png" height="70" width="120">
