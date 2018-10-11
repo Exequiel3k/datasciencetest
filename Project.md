@@ -31,7 +31,7 @@ testSamples %>%
 ggplot(testSamples, aes(x=test_group)) + 
   geom_bar(aes(y = ..prop.., group = 1)) +
   scale_x_continuous(breaks=0:1, labels=c("Control","Test")) +
-  labs(x="Test Group", y="Proportion %")
+  labs(x="Group", y="Proportion %")
 ```
 
 ### Is a user that must call-in to cancel more likely to generate at least 1 addition REBILL? 
