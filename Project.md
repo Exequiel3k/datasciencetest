@@ -20,6 +20,7 @@ The relative frequency distribution for each is:
    - Control group: 75.2% (44,886 users) 
    - Test group: 24.8% (14,835 users)
  
+ <img src="/q1.png" height="300" width="300">
  <img src="/IMG.png" height="300" width="300">
  
 ```
