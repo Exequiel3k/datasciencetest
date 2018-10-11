@@ -20,8 +20,7 @@ The relative frequency distribution for each is:
    - Control group: 75.2% (44,886 users) 
    - Test group: 24.8% (14,835 users)
  
- <img src="/q1.png" height="300" width="300">
- <img src="/IMG.png" height="300" width="300">
+ <img src="/q1.PNG" height="300" width="300">
  
 ```
 testSamples %>%
@@ -40,6 +39,7 @@ The proportions table clearly indicates users that call instead of the web-form 
 
    - Control group: 92.7%  
    - Test group: 94.8%
+   
    
  <img src="/q1.1.png" height="145" width="220">
 
@@ -67,6 +67,7 @@ If we focus exclusively on "REBILL", they do in fact generate more revenue on av
    - Control group: Average of 25.9
    - Test group: Average of 31.5
 
+
 <img src="/q3.1.png" height="110" width="160">
 
 ```
@@ -78,6 +79,7 @@ inner_merged %>%
 If we take into considering all of the factors, users that call still generate more revenue on average in the long-run.
    - Control group: Average of 22.2  
    - Test group: Average of 28.2 
+   
    
 <img src="/q3.2.png" height="60" width="100">
 
@@ -92,6 +94,8 @@ Based on the findings, web-form users have higher chargeback rates.
 
    - Control group: 2.82%
    - Test group: 1.78%
+   
+   
 <img src="/q4.1.png" height="70" width="120">
 
 ```
